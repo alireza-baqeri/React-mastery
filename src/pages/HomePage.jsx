@@ -1,9 +1,5 @@
 function HomePage() {
-    return (
-        <div className="text-2xl">
-            hey
-        </div>
-    )
+    return <div className="text-2xl">HomePage</div>;
 }
 
 export default HomePage
