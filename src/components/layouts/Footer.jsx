@@ -6,7 +6,7 @@ function Footer() {
     <footer className="flex flex-col border-t py-12 md:py-16 text-slate-600 dark:text-slate-300">
       <div className="flex flex-col flex-grow max-w-6xl mx-auto w-full">
         {/* navlinks */}
-        {/* چون فوتر پدینگ دارد، pt را از اینجا حذف کردم تا فاصله‌ها یکدست باشد */}
+        {/* I have 3 cols - LOGO and our motto - the Learning navigation part - the commiunity and social links */}
         <nav className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-8 pb-8 border-b">
           {/* left col */}
           <div>
@@ -40,11 +40,10 @@ function Footer() {
         </nav>
 
         {/* infos and license */}
-        {/* pt-8 اضافه شد تا از خط مرزی بالا فاصله بگیرد. pb-4 حذف شد چون فوتر پایین پدینگ دارد */}
         <div className="grid grid-cols-1 md:grid-cols-2 mt-auto pt-8 gap-4 text-center md:text-left text-sm text-slate-500">
           <span>© 2026 React Mastery</span>
           <span className="md:text-right">
-            Built with <abbr title="UWU">Passion</abbr> & ♥️. Under MIT license
+            Built with <abbr title="UWU">Passion</abbr> & ♥️ Under MIT license
             🥳
           </span>
         </div>
@@ -54,3 +53,4 @@ function Footer() {
 }
 
 export default Footer;
+
