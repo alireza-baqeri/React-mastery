@@ -2,39 +2,52 @@ import logo from "../../assets/images/navbar-logo.webp";
 
 function Footer() {
   return (
-    <footer className="border-t columns-3">
-      {/* left col */}
-      <div>
-        <img
-          className="w-38 h-auto rounded-xl"
-          src={logo}
-          alt="react-mastery"
-        />
-        Master React. Strengthen your REACT skills.
-      </div>
-      {/* navlinks */}
-      <nav>
-        {/* middle col */}
-        <h4>Learn</h4>
-        <ul className="col">
-          <li>Topics</li>
-          <li>Dashboard</li>
-          <li>Tutorials</li>
-        </ul>
-        {/* right col */}
-        <h4>Community</h4>
-        <ul>
-          <li>GitHub</li>
-          <li>Discord</li>
-          <li>Twitter</li>
-        </ul>
-      </nav>
-      {/* infos and license */}
-      <div className="row">
-        <span>© 2026 React Mastery</span>
-        <span>
-          Built with <abbr title="UWU">Passion</abbr> & ♥️. Under MIT license 🥳
-        </span>
+   
+    <footer className="flex flex-col border-t py-12 md:py-16 text-slate-600 dark:text-slate-300">
+      <div className="flex flex-col flex-grow max-w-6xl mx-auto w-full">
+        {/* navlinks */}
+        {/* چون فوتر پدینگ دارد، pt را از اینجا حذف کردم تا فاصله‌ها یکدست باشد */}
+        <nav className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-8 pb-8 border-b">
+          {/* left col */}
+          <div>
+            <img
+              className="w-36 h-auto rounded-xl mb-4"
+              src={logo}
+              alt="react-mastery"
+            />
+            <p>Master React. Strengthen your REACT skills.</p>
+          </div>
+
+          {/* middle col */}
+          <div>
+            <h4 className="font-bold mb-4 text-slate-900 dark:text-white">Learn</h4>
+            <ul className="space-y-2">
+              <li>Topics</li>
+              <li>Dashboard</li>
+              <li>Tutorials</li>
+            </ul>
+          </div>
+          
+          {/* right col */}
+          <div>
+            <h4 className="font-bold mb-4 text-slate-900 dark:text-white">Community</h4>
+            <ul className="space-y-2">
+              <li>GitHub</li>
+              <li>Discord</li>
+              <li>Twitter</li>
+            </ul>
+          </div>
+        </nav>
+
+        {/* infos and license */}
+        {/* pt-8 اضافه شد تا از خط مرزی بالا فاصله بگیرد. pb-4 حذف شد چون فوتر پایین پدینگ دارد */}
+        <div className="grid grid-cols-1 md:grid-cols-2 mt-auto pt-8 gap-4 text-center md:text-left text-sm text-slate-500">
+          <span>© 2026 React Mastery</span>
+          <span className="md:text-right">
+            Built with <abbr title="UWU">Passion</abbr> & ♥️. Under MIT license
+            🥳
+          </span>
+        </div>
       </div>
     </footer>
   );
