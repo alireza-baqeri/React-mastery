@@ -3,7 +3,7 @@ import TopicCard from "../components/topics/TopicCard";
 
 function TopicsPage() {
   return (
-    <div className="min-h-screen bg-slate-900">
+    <div className=" bg-slate-900">
       <div className="mx-auto max-w-6xl px-4 py-10">
         <header className="pt-7 text-center">
           <h1 className="text-3xl font-bold text-white sm:text-4xl">

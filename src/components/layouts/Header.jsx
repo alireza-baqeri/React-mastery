@@ -39,10 +39,15 @@ function Header() {
 
         {/* button in the mobile resolution */}
         <button
+          type="button"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label={
+            isMenuOpen ? "Close navigation menu" : "Open navigation menu"
+          }
+          aria-expanded={isMenuOpen}
           className="md:hidden text-2xl"
         >
-          ☰
+          {isMenuOpen ? "✕" : "☰"}
         </button>
       </div>
 

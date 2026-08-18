@@ -12,7 +12,7 @@ function TopicCard({ topic }) {
       </p>
 
       <Link
-        to={`${topic.slug}`}
+        to={`/topics/${topic.slug}`}
         className="mt-auto inline-block rounded-lg bg-blue-500 px-5 py-2.5 text-center text-sm font-semibold text-white shadow-md shadow-emerald-500/20 transition hover:bg-blue-600 hover:shadow-lg hover:shadow-emerald-500/40 sm:text-base"
       >
         View Topic
