@@ -1,13 +1,12 @@
 import { Link } from "react-router-dom";
-import { topics } from "../../data/topics";
 
-function TopicCard() {
-  const topicFirst = topics[0];
+function TopicCard({topic}) {
+ 
   return (
     <div>
-      <h3>{topicFirst.title}</h3>
-      <p>{topicFirst.description}</p>
-      <Link to={`topics/${topicFirst.slug}`}>View Topic</Link>
+      <h3>{topic.title}</h3>
+      <p>Topic Description: {topic.description}</p>
+      <Link to={`topics/${topic.slug}`}>View Topic</Link>
     </div>
   );
 }
